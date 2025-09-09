@@ -88,10 +88,6 @@ int main(){
     // code for solving linear systems goes here
 
     // Newton's method for nonlinear system
-    // System:
-    // f1(x1, x2) = ln(x1^2 + x2^2) - sin(x1 x2) - (ln2 + lnπ)
-    // f2(x1, x2) = exp(x1 - x2) + cos(x1 x2)
-    // Initial guess: x = [2, 2]
     #include <cmath>
     auto f = [](const std::vector<double>& x) -> std::vector<double> {
         double x1 = x[0], x2 = x[1];
